@@ -5,7 +5,7 @@
 struct structure
 {
 	int integer;
-	char* string; 
+	char string[]; 
 };
 
 typedef struct structure structure;
@@ -21,10 +21,6 @@ void swap(structure a,structure b)
 	b.string = c.string;
 }
 
-structure write(structure a)
-{
-	
-}
 
 void print(structure a)
 {
@@ -33,6 +29,6 @@ void print(structure a)
 
 int main()
 {
-	
+
 	return 0;
 }
